@@ -6,7 +6,6 @@ const gender = {
 $(document).ready(function () {
   // Client listener
   window.addEventListener('message', function (event) {
-    console.log(JSON.stringify(event.data));
     if (event.data.action == 'open') {
       var data = event.data.array;
       $('#lastname').text(data.lastname);
