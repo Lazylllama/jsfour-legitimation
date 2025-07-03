@@ -3,7 +3,6 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 -- Register the item in the QBCore framework
 QBCore.Functions.CreateUseableItem(Config.Inventory.IDCard, function(source, item)
-	print("Använd ID-kort", json.encode(item))
 	local gender = "Man"
 	local closestId, _closestPed, _closestCoords = lib.getClosestPlayer(GetEntityCoords(GetPlayerPed(source)), 2, false)
 
